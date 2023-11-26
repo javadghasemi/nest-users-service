@@ -2,12 +2,13 @@ import { Observable } from 'rxjs';
 import { GrpcMethod } from '@nestjs/microservices';
 
 export const ProtobufPackage = 'users';
-export const USERS_PACKAGE_NAME: string = 'users';
-export const USERS_SERVICE_NAME: string = 'UsersService';
+export const USERS_PACKAGE_NAME = 'users';
+export const USERS_SERVICE_NAME = 'UsersService';
 
 export interface CreateUserRequest {
   firstName: string;
   lastName: string;
+  email: string;
 }
 
 export interface CreateUserResponse {
